@@ -1,7 +1,7 @@
 // Header.js
 import * as React from 'react';
 import { Box, Checkbox, FormControlLabel } from "@mui/material";
-import { Secondary } from "./button";
+import { Secondary } from "./Fields";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "./theme";
 
@@ -12,11 +12,25 @@ function Header() {
       <h1>TEXT FIELD</h1>
         <Box>
           <Secondary
-            label="Label"
+             label="Label"
+          //  placeholder='Name'
+            required  
+            // helperText='Helper text'
+            // disabled
+            // error
             sx={{
               marginTop: "20px",
               width: '300px',
               height: '100px',
+        //        '&:focus': {
+        //   borderColor: 'green.500',
+        // },
+        //       "&.Mui-focused": {
+        //         outline: "#37474F",
+        //       },
+        //       "&.Mui-active":{
+        //         outline: "#37474F",
+        //       }
             }}
             // InputProps={{
             //   startAdornment: (
@@ -43,3 +57,5 @@ function Header() {
 }
 
 export default Header;
+
+

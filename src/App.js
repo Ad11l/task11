@@ -1,5 +1,5 @@
 import { Box } from '@mui/system';
-import Header from './component/index';
+import Header from './TextFields/index';
 
 function App() {
   return (

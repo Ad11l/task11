@@ -1,5 +1,5 @@
 import React from "react";
-import { TextField, FormControlLabel, Checkbox } from "@mui/material";
+import { TextField } from "@mui/material";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "./theme";
 
@@ -12,6 +12,7 @@ const styles = {
   },
 };
 
+
 export const Secondary = (props) => {
   const { sx, ...otherprops } = props;
 
@@ -21,12 +22,21 @@ export const Secondary = (props) => {
         {...otherprops}
         sx={{
           "&:hover": {},
-          "&:active": {},
-          ...sx,
-          
-        }}
+          '& .MuiOutlinedInput-root': {
+      
+      '&.Mui-focused fieldset': {
+        borderColor: '#37474F',
         
+      },
+    },
+          // "&.Mui-focused": {
+          //   borderColor: "#37474F", 
+          // },
+          ...sx,
+        }}
       />
     </ThemeProvider>
   );
 };
+
+export default Secondary;
