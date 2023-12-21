@@ -63,9 +63,8 @@ function Header() {
      <MenuItem value="defualt" disabled>
             Value
           </MenuItem>
-         <MenuItem>{item.values[0].value1}</MenuItem>
-         <MenuItem>{item.values[1].value2}</MenuItem>
-         <MenuItem>{item.values[2].value3}</MenuItem>
+          {item.values.map((value, valueIndex) => (
+            <MenuItem key={valueIndex}>{Object.values(value)[0]}</MenuItem>))}
     </Secondary>
         </Box>
         
