@@ -1,13 +1,12 @@
-import { Box } from '@mui/system';
+import { Box } from '@mui/system'
 import Header from './Section/Base/index'
 
 function App() {
   return (
-    
     <Box>
-      <Header/>
+      <Header />
     </Box>
-  );
+  )
 }
 
-export default App;
+export default App

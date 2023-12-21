@@ -1,5 +1,5 @@
-import React from "react";
-import { TextField } from "@mui/material";
+import React from 'react'
+import { TextField } from '@mui/material'
 
 const styles = {
   someTextField: {
@@ -8,28 +8,25 @@ const styles = {
   someOtherTextField: {
     minHeight: 120,
   },
-};
-
+}
 
 export const Secondary = (props) => {
-  const { sx, ...otherprops } = props;
+  const { sx, ...otherprops } = props
 
   return (
-      <TextField
-        {...otherprops}
-        sx={{
-          "&:hover": {},
-          '& .MuiOutlinedInput-root': {
-      
-      '&.Mui-focused fieldset': {
-        borderColor: '#37474F',
-        
-      },
-    },
-         ...sx,
-        }}
-      />
-  );
-};
+    <TextField
+      {...otherprops}
+      sx={{
+        '&:hover': {},
+        '& .MuiOutlinedInput-root': {
+          '&.Mui-focused fieldset': {
+            borderColor: '#37474F',
+          },
+        },
+        ...sx,
+      }}
+    />
+  )
+}
 
-export default Secondary;
+export default Secondary
