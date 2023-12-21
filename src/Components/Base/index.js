@@ -1,7 +1,8 @@
+// Header.js
 import React, { useState } from 'react';import { Box, TextField, MenuItem, Checkbox, FormControlLabel } from "@mui/material";
 import { Secondary } from "./Fields";
 import item from '../../item.json'
-function TextFields() {
+function Header() {
   
   const [selectedValue, setSelectedValue] = useState('');
 
@@ -53,7 +54,7 @@ function TextFields() {
       onChange={handleChange}
       variant="outlined"
       fullWidth
-      defualValue="value"
+      
         
       
       sx={{
@@ -62,8 +63,8 @@ function TextFields() {
     >
      <MenuItem value="defualt" disabled>
             Value
-          </MenuItem>
-          {item.values.map((value, valueIndex) => (
+          </MenuItem>        
+         {item.values.map((value, valueIndex) => (
             <MenuItem key={valueIndex}>{Object.values(value)[0]}</MenuItem>))}
     </Secondary>
         </Box>
@@ -73,6 +74,6 @@ function TextFields() {
   );
 }
 
-export default TextFields;
+export default Header;
 
 
