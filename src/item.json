@@ -1,0 +1,15 @@
+{"values":[
+    { 
+        "value1": "Buy a residential property", 
+        "label1": "Option 1" 
+    },
+    { 
+        "value2": "Buy a commercial property", 
+        "label2": "Option 2"
+     },
+    { 
+        "value3": "Buy a plot", 
+        "label3": "Option 3"
+     }
+  ]
+}

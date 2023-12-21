@@ -1,7 +1,5 @@
 import React from "react";
 import { TextField } from "@mui/material";
-import { ThemeProvider } from "@mui/material/styles";
-import theme from "./theme";
 
 const styles = {
   someTextField: {
@@ -17,7 +15,6 @@ export const Secondary = (props) => {
   const { sx, ...otherprops } = props;
 
   return (
-    <ThemeProvider theme={theme}>
       <TextField
         {...otherprops}
         sx={{
@@ -29,13 +26,9 @@ export const Secondary = (props) => {
         
       },
     },
-          // "&.Mui-focused": {
-          //   borderColor: "#37474F", 
-          // },
-          ...sx,
+         ...sx,
         }}
       />
-    </ThemeProvider>
   );
 };
 
