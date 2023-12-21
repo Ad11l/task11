@@ -1,7 +1,7 @@
 import React, { useState } from 'react';import { Box, TextField, MenuItem, Checkbox, FormControlLabel } from "@mui/material";
 import { Secondary } from "./Fields";
 import item from '../../item.json'
-function Header() {
+function TextFields() {
   
   const [selectedValue, setSelectedValue] = useState('');
 
@@ -53,7 +53,7 @@ function Header() {
       onChange={handleChange}
       variant="outlined"
       fullWidth
-      value="default"
+      defualValue="value"
         
       
       sx={{
@@ -73,6 +73,6 @@ function Header() {
   );
 }
 
-export default Header;
+export default TextFields;
 
 
