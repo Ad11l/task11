@@ -11,20 +11,29 @@ const styles = {
 }
 
 export const Secondary = (props) => {
-  const { sx, ...otherprops } = props
+  const { sx, InputLabelProps, ...otherprops } = props
 
   return (
     <TextField
       {...otherprops}
-      sx={{
-        '&:hover': {},
-        '& .MuiOutlinedInput-root': {
-          '&.Mui-focused fieldset': {
-            borderColor: '#37474F',
-          },
+      InputLabelProps={{
+        style: {
+          color: '#737678', 
         },
-        ...sx,
+        ...InputLabelProps,
       }}
+        sx={{
+          "&:hover": {},
+          '& .MuiOutlinedInput-root': {
+      
+      '&.Mui-focused fieldset': {
+        borderColor: '#37474F',
+        color:'#737678'
+        
+      },
+    },
+            ...sx,
+        }}
     />
   )
 }

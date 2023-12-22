@@ -1,6 +1,5 @@
 import { Box } from '@mui/system';
-import TextFields from './Components/Base/index'
-import Buttons from './Components/Base/buttons';
+import Header from './Section/Base/index'
 
 function App() {
   return (
