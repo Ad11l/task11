@@ -1,10 +1,12 @@
 import { Box } from '@mui/system';
-import Header from './Section/Base/index'
+import TextFields from './Components/Base/index'
+import Buttons from './Components/Base/buttons';
 
 function App() {
   return (
     
     <Box>
+    <Buttons/>
       <TextFields/>
     </Box>
   );
