@@ -41,11 +41,10 @@ const theme = createTheme({
         }
   },
   typography: {
-    variant: {
       h1custom: {
         fontSize: '2.436rem',
         fontWeight: 500,
-        fontFamily: 'poppins, sans-serif',
+        fontFamily: 'poppins, san-serif',
       },
       h0custom: {
         fontSize: '2.1rem',
@@ -99,7 +98,6 @@ const theme = createTheme({
       }
       
     },
-  },
 });
 
 export default theme;

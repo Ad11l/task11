@@ -1,18 +1,17 @@
-// Secondary.js
 import React from "react";
 import { Box, Button, IconButton } from "@mui/material";
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 import Typography from '@mui/material/Typography';
+import { ThemeProvider } from "@mui/material/styles";
+import theme from "./theme";
 
 
 export const Secondary = (props) => {
     const { children, sx, ...otherprops } = props;
     console.log("size is", props)
     return (
-            <Button
-                
+            <Button                
                 {...otherprops}
-
                 sx={{
                     padding: '10px 16px',
                     justifyContent: "center",
@@ -26,23 +25,22 @@ export const Secondary = (props) => {
     );
 };
 export const Iconbutton = (props) => {
-    const { children, variant, color, sx, Disabled, size,} = props;
+    const { children,variant,  ...otherprops} = props;
 
     return (
         <Box>
             <IconButton
-    
-                variant={variant}
-                color={color}
-                Disabled={Disabled}
-                size={size}
-                sx={sx}>
+            {...otherprops}    
+                >
                 <AddCircleIcon />
                 {children}
-
             </IconButton>
-            <Typography variant={variant}
-            >hello</Typography>
+            <ThemeProvider theme={theme}>
+
+            <Typography variant={variant}>{children}hello</Typography>
+            </ThemeProvider>
+
         </Box>
     );
 };
+

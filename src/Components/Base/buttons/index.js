@@ -1,4 +1,3 @@
-// Header.js
 import * as React from 'react';
 import "../../../App.css";
 import { Box } from "@mui/material";
@@ -6,11 +5,7 @@ import { Iconbutton } from "./buttons";
 import { Secondary } from "./buttons";
 
 
-
-
 function Buttons() {
-
-
   return (
       <section style={{ mx: 2, mt: "100px", }}>
         <h1>Primary</h1>
@@ -73,10 +68,9 @@ function Buttons() {
 
         <Box sx={{ display: "flex", gap: 90 }}>
 
-          <Iconbutton color="white" size="small" variant={'bodynormal_b'}
+          <Iconbutton color="white" size="large" variant={'h1custom'}
             sx={{
               backgroundColor:"#E85451",
-              fontSize: "30px",
               "&:hover": {
               backgroundColor: "#D63936",}              
             }}
