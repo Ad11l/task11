@@ -10,7 +10,7 @@ function Textfields() {
   };
 
   return (
-    <Box sx={{ mx: 2, mt: "10px", display: "flex", flexDirection: "column" }}>
+    <Box sx={{ mx: 2, mb:30, mt: "10px", display: "flex", flexDirection: "column" }}>
       <h1>TEXT FIELD</h1>
       <Box>
         <Secondary
@@ -53,13 +53,12 @@ function Textfields() {
           onChange={handleChange}
           variant="outlined"
           fullWidth
+          label="Values"
           sx={{
             width: '323px',
           }}
         >
-          <MenuItem disabled selected ="true">
-            Value
-          </MenuItem>
+          
           {item.values.map((value, valueIndex) => (
             <MenuItem key={valueIndex}>{Object.values(value)[0]}
             </MenuItem>
