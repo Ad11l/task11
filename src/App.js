@@ -8,6 +8,8 @@ function App() {
     <Box>
     <Buttons/>
     <Textfields/>
+    <Textfields/>
+    
     </Box>
   );
 }

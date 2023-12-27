@@ -53,7 +53,7 @@ function Textfields() {
           onChange={handleChange}
           variant="outlined"
           fullWidth
-          label="Values"
+          label="Values select"
           sx={{
             width: '323px',
           }}
