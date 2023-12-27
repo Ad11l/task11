@@ -1,5 +1,5 @@
 import { Box } from '@mui/system';
-import Header from './Components/Base/index'
+import Textfields from './Components/Base/textfields/index'
 import Buttons from './Components/Base/buttons';
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     
     <Box>
     <Buttons/>
-    <Header/>
+    <Textfields/>
     </Box>
   );
 }

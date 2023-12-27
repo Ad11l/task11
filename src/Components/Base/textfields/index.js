@@ -1,6 +1,6 @@
-import React, { useState } from 'react'; import { Box, TextField, MenuItem, Checkbox, FormControlLabel } from "@mui/material";
+import React, { useState } from 'react'; import { Box, MenuItem, Select } from "@mui/material";
 import { Secondary } from "./Fields";
-import item from '../../item.json'
+import item from '../../../item.json'
 function Textfields() {
 
   const [selectedValue, setSelectedValue] = useState('');
@@ -10,10 +10,10 @@ function Textfields() {
   };
 
   return (
-    <Box sx={{ mx: 2, mb:30, mt: "10px", display: "flex", flexDirection: "column" }}>
-      <h1>TEXT FIELD</h1>
+    <Box sx={{ mx: 2, mb:30, mt:10, display: "flex", flexDirection: "column" }}>
+      <h1>TEXT FIELDS</h1>
       <Box>
-        <Secondary
+        <Secondary 
           label="Label"
           //  placeholder='Name'
           required
