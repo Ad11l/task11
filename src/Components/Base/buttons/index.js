@@ -4,12 +4,11 @@ import { Box } from "@mui/material";
 import { Iconbutton } from "./buttons";
 import { Secondary } from "./buttons";
 
-
 function Buttons() {
   return (
       <section style={{ mx: 2, mt: "100px", }}>
         <h1>Primary</h1>
-        <Box sx={{ ml:"20px", display: "flex", flexDirection: "column", gap: "20px" }}>
+        <Box sx={{ ml:"20px", display: "inlineflex", gap: "20px" }}>
 
           <Secondary variant="contained" color="secondary" size="small" disableRipple
             sx={{
@@ -91,7 +90,6 @@ function Buttons() {
         </Box>
 
 
-        <h1>Small</h1>
         <Box sx={{ display: "flex", gap: 40 }}>
           <h5>primary</h5>
           <h5>secondary</h5>
